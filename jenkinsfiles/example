@@ -49,5 +49,12 @@ pipeline {
         sh 'sleep 4'
       }
     }
+    stage('Integrated Test') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
   }
 }
