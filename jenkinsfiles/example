@@ -42,14 +42,14 @@ pipeline {
         sh 'sleep 4'
       }
     }
-    stage('Deploy to QA env') {
+    stage('Deploy to QA') {
       agent any
       steps {
         //sample dummy step
         sh 'sleep 4'
       }
     }
-    stage('Test QA env') {
+    stage('Test QA') {
       agent any
       steps {
         //sample dummy step
@@ -57,14 +57,14 @@ pipeline {
         echo "Test QA stage is complete."
       }
     }
-    stage('Deploy to UAT env') {
+    stage('Deploy to UAT') {
       agent any
       steps {
         //sample dummy step
         sh 'sleep 4'
       }
     }
-     stage('Test UAT env') {
+     stage('Test UAT') {
       agent any
       steps {
         //sample dummy step
