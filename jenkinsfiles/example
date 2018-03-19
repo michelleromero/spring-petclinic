@@ -64,12 +64,27 @@ pipeline {
         sh 'sleep 4'
       }
     }
-     stage('Test UAT') {
+    stage('Test UAT') {
       agent any
       steps {
         //sample dummy step
         sh 'sleep 4'
         echo "Test UAT stage is complete."
+      }
+    }
+    stage('Approval') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+        echo "Approval Needed to Continue to Prod Deploy."
+      }
+    }
+    stage('Deploy to Prod') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
       }
     }
   }
